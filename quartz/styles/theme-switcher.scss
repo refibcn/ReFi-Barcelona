@@ -1,0 +1,283 @@
+/*
+ReFi Barcelona Theme Switcher
+Allows easy switching between different ReFi themes
+*/
+
+/* ===== THEME SWITCHER CONFIGURATION ===== */
+
+/* Default Theme: Navy Blue ReFi (from quartz.config.ts) */
+.theme-default {
+  @import "base.scss";
+  
+  /* Use the colors defined in quartz.config.ts */
+  --light: #002147;
+  --lightgray: rgba(255, 255, 255, 0.1);
+  --gray: rgba(255, 255, 255, 0.15);
+  --darkgray: #a8a8b3;
+  --dark: #ffffff;
+  --secondary: #4C9AFF;
+  --tertiary: #1A73E8;
+  --highlight: rgba(76, 154, 255, 0.2);
+  --textHighlight: rgba(255, 255, 255, 0.1);
+}
+
+/* Green ReFi Theme */
+.theme-green-refi {
+  @import "base.scss";
+  @import "green-refi.scss";
+}
+
+/* Minimal ReFi Theme */
+.theme-minimal-refi {
+  @import "base.scss";
+  @import "minimal-refi.scss";
+}
+
+/* ===== THEME SWITCHER CONTROLS ===== */
+
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--bg2);
+  border: 1px solid var(--ui2);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+}
+
+.theme-switcher h3 {
+  margin: 0 0 1rem 0;
+  color: var(--text-bright);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.theme-option:hover {
+  background-color: var(--ui1);
+}
+
+.theme-option input[type="radio"] {
+  margin-right: 0.75rem;
+  accent-color: var(--accent-primary);
+}
+
+.theme-option label {
+  color: var(--text-normal);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.theme-option.active {
+  background-color: var(--highlight);
+  color: var(--accent-primary);
+}
+
+/* ===== THEME PREVIEWS ===== */
+
+.theme-preview {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  border: 2px solid var(--ui2);
+}
+
+.theme-preview.default {
+  background: linear-gradient(45deg, #002147 50%, #4C9AFF 50%);
+}
+
+.theme-preview.green {
+  background: linear-gradient(45deg, #4a7c59 50%, #6fa76f 50%);
+}
+
+.theme-preview.minimal {
+  background: linear-gradient(45deg, #002147 50%, #E1E1E6 50%);
+}
+
+/* ===== THEME TRANSITION ANIMATIONS ===== */
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* ===== THEME-SPECIFIC OVERRIDES ===== */
+
+/* Default Theme Overrides */
+.theme-default {
+  .page-header {
+    background-color: var(--light);
+    border-bottom: 1px solid var(--gray);
+  }
+  
+  .sidebar {
+    background-color: var(--lightgray);
+    border-right: 1px solid var(--gray);
+  }
+}
+
+/* Green Theme Overrides */
+.theme-green-refi {
+  .page-header {
+    background-color: var(--green-bg2);
+    border-bottom: 1px solid var(--green-ui2);
+  }
+  
+  .sidebar {
+    background-color: var(--green-bg3);
+    border-right: 1px solid var(--green-ui2);
+  }
+}
+
+/* Minimal Theme Overrides */
+.theme-minimal-refi {
+  .page-header {
+    background-color: var(--bg2);
+    border-bottom: 2px solid var(--accent-primary);
+  }
+  
+  .sidebar {
+    background-color: var(--bg2);
+    border-right: 1px solid var(--ui2);
+  }
+}
+
+/* ===== RESPONSIVE THEME SWITCHER ===== */
+
+@media (max-width: 768px) {
+  .theme-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+  }
+  
+  .theme-option {
+    padding: 0.75rem;
+  }
+}
+
+/* ===== THEME SWITCHER TOGGLE BUTTON ===== */
+
+.theme-switcher-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background: var(--accent-primary);
+  color: var(--text-bright);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.theme-switcher-toggle:hover {
+  background: var(--accent-secondary);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.theme-switcher-toggle:active {
+  transform: scale(0.95);
+}
+
+/* ===== THEME SWITCHER ANIMATIONS ===== */
+
+.theme-switcher {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.theme-switcher.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== THEME SWITCHER ICONS ===== */
+
+.theme-switcher-toggle::before {
+  content: "🎨";
+  font-size: 1.5rem;
+}
+
+/* ===== THEME SWITCHER CLOSE BUTTON ===== */
+
+.theme-switcher-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.theme-switcher-close:hover {
+  color: var(--text-bright);
+  background-color: var(--ui1);
+}
+
+/* ===== THEME SWITCHER FOOTER ===== */
+
+.theme-switcher-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ui2);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ===== THEME SWITCHER SAVE BUTTON ===== */
+
+.theme-save-btn {
+  width: 100%;
+  background: var(--accent-primary);
+  color: var(--text-bright);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.theme-save-btn:hover {
+  background: var(--accent-secondary);
+}
+
+.theme-save-btn:active {
+  transform: translateY(1px);
+}

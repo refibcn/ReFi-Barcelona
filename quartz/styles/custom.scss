@@ -1,6 +1,12 @@
 @use "./base.scss";
-
-// Import Minimal ReFi Theme for ReFi Barcelona
 @import "minimal-refi.scss";
 
-// put your custom CSS here!
+/* Top navigation minor layout guardrails */
+.page > #quartz-body .page-header {
+  margin-top: 0;
+}
+
+/* Ensure content starts below sticky nav */
+body {
+  scroll-padding-top: 64px;
+}

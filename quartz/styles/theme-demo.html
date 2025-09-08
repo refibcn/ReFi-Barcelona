@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal ReFi Theme Demo</title>
+    <link rel="stylesheet" href="base.scss">
+    <link rel="stylesheet" href="minimal-refi.scss">
+    <link rel="stylesheet" href="custom-minimal.scss">
+    <link rel="stylesheet" href="theme-switcher.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&family=IBM+Plex+Mono&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Demo-specific styles */
+        .demo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .demo-section {
+            margin: 3rem 0;
+            padding: 2rem;
+            border: 1px solid var(--ui2);
+            border-radius: 8px;
+        }
+        .demo-title {
+            color: var(--accent-primary);
+            border-bottom: 2px solid var(--accent-primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .color-swatch {
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+        }
+        .color-swatch.primary { background-color: var(--navy-primary); }
+        .color-swatch.secondary { background-color: var(--navy-secondary); }
+        .color-swatch.accent { background-color: var(--accent-primary); }
+        .color-swatch.accent-hover { background-color: var(--accent-secondary); }
+        .color-swatch.text { background-color: var(--text-normal); }
+        .color-swatch.muted { background-color: var(--text-muted); }
+    </style>
+</head>
+<body class="theme-minimal-refi">
+    <div class="demo-container">
+        <header>
+            <h1>Minimal ReFi Theme Demo</h1>
+            <p>A sophisticated, minimal theme for ReFi Barcelona with enhanced typography and professional aesthetics.</p>
+        </header>
+
+        <section class="demo-section">
+            <h2 class="demo-title">Color Palette</h2>
+            <div class="color-palette">
+                <div class="color-swatch primary">Primary<br>#002147</div>
+                <div class="color-swatch secondary">Secondary<br>#001a3a</div>
+                <div class="color-swatch accent">Accent<br>#4C9AFF</div>
+                <div class="color-swatch accent-hover">Hover<br>#1A73E8</div>
+                <div class="color-swatch text">Text<br>#E1E1E6</div>
+                <div class="color-swatch muted">Muted<br>#a8a8b3</div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2 class="demo-title">Typography</h2>
+            <h1>Heading 1 - Bodoni Moda Italic</h1>
+            <h2>Heading 2 - Bodoni Moda Italic</h2>
+            <h3>Heading 3 - Bodoni Moda Italic</h3>
+            <h4>Heading 4 - Bodoni Moda Italic</h4>
+            <p>Body text using Source Sans Pro for excellent readability. This paragraph demonstrates the clean, professional appearance of the Minimal ReFi theme.</p>
+            <p>Links are styled with <a href="#">smooth transitions</a> and hover effects that maintain the professional aesthetic while providing clear interactive feedback.</p>
+        </section>
+
+        <section class="demo-section">
+            <h2 class="demo-title">Code & Technical Content</h2>
+            <p>Inline code like <code>const theme = 'minimal-refi'</code> is styled with subtle backgrounds and proper spacing.</p>
+            <pre><code>// Code blocks feature enhanced styling
+const ReFiTheme = {
+  name: 'Minimal ReFi',
+  colors: {
+    primary: '#002147',
+    accent: '#4C9AFF'
+  },
+  typography: {
+    headers: 'Bodoni Moda',
+    body: 'Source Sans Pro'
+  }
+};</code></pre>
+        </section>
+
+        <section class="demo-section">
+            <h2 class="demo-title">Interactive Elements</h2>
+            <button>Primary Button</button>
+            <button style="margin-left: 1rem;">Secondary Button</button>
+            <p style="margin-top: 1rem;">
+                <a href="#" class="internal">Internal Link</a> with enhanced styling for better navigation experience.
+            </p>
+        </section>
+
+        <section class="demo-section">
+            <h2 class="demo-title">Content Elements</h2>
+            <blockquote>
+                This is a blockquote that demonstrates the elegant styling of the Minimal ReFi theme. It features a left border accent and subtle background styling.
+            </blockquote>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Typography</td>
+                        <td>Bodoni Moda headers with Source Sans Pro body</td>
+                        <td>✅ Complete</td>
+                    </tr>
+                    <tr>
+                        <td>Color Scheme</td>
+                        <td>Navy blue professional palette</td>
+                        <td>✅ Complete</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Design</td>
+                        <td>Mobile-first approach</td>
+                        <td>✅ Complete</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="demo-section">
+            <h2 class="demo-title">Lists & Navigation</h2>
+            <ul>
+                <li>Clean, minimal list styling</li>
+                <li>Consistent spacing and typography</li>
+                <li>Professional appearance</li>
+            </ul>
+            
+            <ol>
+                <li>Ordered lists maintain consistency</li>
+                <li>Clear visual hierarchy</li>
+                <li>Accessible design patterns</li>
+            </ol>
+        </section>
+
+        <section class="demo-section">
+            <h2 class="demo-title">Tags & Labels</h2>
+            <span class="tag">ReFi</span>
+            <span class="tag">Barcelona</span>
+            <span class="tag">Minimal</span>
+            <span class="tag">Theme</span>
+            <span class="tag">Quartz</span>
+        </section>
+
+        <section class="demo-section">
+            <h2 class="demo-title">Callouts & Alerts</h2>
+            <div class="callout">
+                <strong>Info:</strong> This is a callout box that demonstrates the enhanced styling capabilities of the Minimal ReFi theme.
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Minimal ReFi Theme Demo - ReFi Barcelona</p>
+            <p>Built with Quartz and enhanced for the ReFi ecosystem</p>
+        </footer>
+    </div>
+
+    <script src="../static/js/theme-switcher.js"></script>
+</body>
+</html>

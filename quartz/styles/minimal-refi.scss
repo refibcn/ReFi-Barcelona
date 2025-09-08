@@ -1,5 +1,5 @@
 /*
-ReFi Barcelona Theme for Quartz
+ReFi Barcelona Minimal Theme for Quartz
 Converted from Obsidian Publish production styling
 Based on Minimal Theme by @kepano (Stephan Ango)
 
@@ -15,8 +15,8 @@ Navy blue aesthetic with Bodoni Moda typography
 :root {
   /* Navy Blue Base Colors */
   --navy-primary: #002147;
-  --navy-secondary: #002147;
-  --navy-tertiary: #002147;
+  --navy-secondary: #001a3a;
+  --navy-tertiary: #00152e;
   
   /* Text Colors */
   --text-normal: #E1E1E6;
@@ -26,15 +26,25 @@ Navy blue aesthetic with Bodoni Moda typography
   /* Interactive Colors */
   --interactive-normal: #4C9AFF;
   --interactive-hover: #1A73E8;
+  --interactive-active: #0d47a1;
   
   /* Border Colors */
   --border-color: rgba(255, 255, 255, 0.15);
+  --border-hover: rgba(255, 255, 255, 0.25);
   
   /* Graph View Colors */
   --graph-text: #ffffff;
   --graph-node: #ffffff;
-  --graph-node-focused: #ffffff;
-  --graph-line: #ffffff;
+  --graph-node-focused: #4C9AFF;
+  --graph-line: rgba(255, 255, 255, 0.3);
+  
+  /* Accent Colors */
+  --accent-primary: #4C9AFF;
+  --accent-secondary: #1A73E8;
+  --accent-tertiary: #6ba3ff;
+  --accent-success: #34a853;
+  --accent-warning: #fbbc04;
+  --accent-error: #ea4335;
 }
 
 /* ===== LIGHT MODE COLORS ===== */
@@ -58,7 +68,7 @@ body.theme-light {
   /* Accent variations - Blue theme */
   --ax1: var(--interactive-normal);         /* Primary accent */
   --ax2: var(--interactive-hover);          /* Hover accent */
-  --ax3: #6ba3ff;                           /* Lighter accent */
+  --ax3: var(--accent-tertiary);            /* Lighter accent */
   
   /* Highlights */
   --hl1: rgba(76, 154, 255, 0.2);           /* Selection highlight */
@@ -87,7 +97,7 @@ body.theme-dark {
   /* Accent variations */
   --ax1: var(--interactive-normal);
   --ax2: var(--interactive-hover);
-  --ax3: #6ba3ff;
+  --ax3: var(--accent-tertiary);
   
   /* Highlights */
   --hl1: rgba(76, 154, 255, 0.2);
@@ -368,3 +378,169 @@ p, ul, text, a, tr, td, li, ol, ul, .katex, .math {
 p, ul, text, a, li, ol, ul, .katex, .math {
   overflow-wrap: anywhere;
 }
+
+/* ===== QUARTZ SPECIFIC COMPONENTS ===== */
+
+/* Page header */
+.page-header {
+  background-color: var(--bg2);
+  border-bottom: 1px solid var(--ui2);
+  padding: 1rem 0;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--bg2);
+  border-right: 1px solid var(--ui2);
+}
+
+/* Search results */
+.search-result {
+  background-color: var(--ui1);
+  border: 1px solid var(--ui2);
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-result:hover {
+  background-color: var(--ui2);
+}
+
+/* Tag styling */
+.tag {
+  background-color: var(--ax1);
+  color: var(--sp1);
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.tag:hover {
+  background-color: var(--ax2);
+}
+
+/* Callout boxes */
+.callout {
+  background-color: var(--ui1);
+  border: 1px solid var(--ui2);
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Code blocks */
+pre {
+  background-color: var(--bg3);
+  border: 1px solid var(--ui2);
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Inline code */
+:not(pre) > code {
+  background-color: var(--ui1);
+  color: var(--tx4);
+  padding: 0.125em 0.25em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Lists */
+ul, ol {
+  color: var(--text-normal);
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--ui2);
+  margin: 2rem 0;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--image-radius);
+}
+
+/* Link styling for internal vs external */
+a.internal {
+  background-color: var(--hl1);
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+a.internal:hover {
+  background-color: var(--hl2);
+}
+
+/* External link indicator */
+a[href^="http"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* ===== NAVIGATION ENHANCEMENTS ===== */
+
+/* Breadcrumb navigation */
+.breadcrumb {
+  background-color: var(--bg2);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--ui2);
+  font-size: 0.9em;
+}
+
+.breadcrumb a {
+  color: var(--tx2);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--ax1);
+}
+
+/* ===== FOOTER STYLING ===== */
+.footer {
+  background-color: var(--bg2);
+  border-top: 1px solid var(--ui2);
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--tx2);
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 1rem; }
+.p-4 { padding: 1.5rem; }

@@ -16,15 +16,15 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "refi-barcelona.netlify.app", // TODO: Update with actual domain
+    baseUrl: "luizfernandosg.github.io/ReFi-Barcelona", // GitHub Pages project URL
     ignorePatterns: ["private", "templates", ".obsidian", "backup_*"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Bodoni Moda",
-        body: "Arial",
+        header: "Schibsted Grotesk",
+        body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
       colors: {

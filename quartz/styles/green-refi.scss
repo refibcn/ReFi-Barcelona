@@ -1,0 +1,144 @@
+/*
+ ReFi Barcelona — Old Green Theme (Minimal-inspired)
+ Primary: #4a7c59, Secondary: #6fa76f, with earth and sky accents
+*/
+
+/* Root-scoped palette (light defaults) */
+:root {
+  /* Core ReFi colors */
+  --refi-primary: #4a7c59; /* Primary Green */
+  --refi-secondary: #6fa76f; /* Secondary Green */
+  --refi-earth: #b08968; /* Earth tone */
+  --refi-sky: #5fa8d3; /* Sky blue */
+
+  /* Backgrounds (light) */
+  --green-bg1: #f8fff9; /* near-white with green tint */
+  --green-bg2: #eff9f1;
+  --green-bg3: #e6f3e9;
+
+  /* Text (light) */
+  --green-tx1: #0f2a1a; /* primary text */
+  --green-tx2: #2e5a3f; /* secondary text */
+  --green-tx3: #5f7a6a; /* muted text */
+
+  /* Accents (light) */
+  --green-ax1: var(--refi-primary);
+  --green-ax2: #3d6a4c; /* hover/darker */
+  --green-ax3: var(--refi-secondary);
+
+  /* UI surfaces (light) */
+  --green-ui1: rgba(74, 124, 89, 0.08);
+  --green-ui2: rgba(74, 124, 89, 0.12);
+  --green-ui3: rgba(74, 124, 89, 0.16);
+
+  /* Highlights (light) */
+  --green-hl-selection: rgba(74, 124, 89, 0.18); /* green-tinted selection */
+  --green-hl-warm: rgba(255, 224, 138, 0.45); /* warm yellow */
+  --green-sp1: #ffffff; /* text on accent */
+}
+
+/* Light mode mappings */
+body.theme-light {
+  --bg1: var(--green-bg1);
+  --bg2: var(--green-bg2);
+  --bg3: var(--green-bg3);
+
+  --ui1: var(--green-ui1);
+  --ui2: var(--green-ui2);
+  --ui3: var(--green-ui3);
+
+  --tx1: var(--green-tx1);
+  --tx2: var(--green-tx2);
+  --tx3: var(--green-tx3);
+  --tx4: var(--green-tx2);
+
+  --ax1: var(--green-ax1);
+  --ax2: var(--green-ax2);
+  --ax3: var(--green-ax3);
+
+  /* Use warm yellow for link/internal highlights, green for text selection */
+  --hl1: var(--green-hl-warm);
+  --hl2: var(--green-hl-selection);
+  --sp1: var(--green-sp1);
+}
+
+/* Dark mode palette */
+body.theme-dark {
+  --bg1: #0e1a12;
+  --bg2: #0b1510;
+  --bg3: #09110d;
+
+  --ui1: rgba(111, 167, 111, 0.10);
+  --ui2: rgba(111, 167, 111, 0.14);
+  --ui3: rgba(111, 167, 111, 0.18);
+
+  --tx1: #e9ffe9;
+  --tx2: #cfe7cf;
+  --tx3: #9fba9f;
+  --tx4: #cfe7cf;
+
+  --ax1: var(--refi-secondary);
+  --ax2: #5f9b5f;
+  --ax3: #8ed18e;
+
+  --hl1: rgba(255, 224, 138, 0.35);
+  --hl2: rgba(111, 167, 111, 0.2);
+  --sp1: #0b1510;
+}
+
+/* Map to Quartz variables */
+body {
+  --light: var(--bg1);
+  --lightgray: var(--ui1);
+  --gray: var(--ui2);
+  --darkgray: var(--tx3);
+  --dark: var(--tx1);
+  --secondary: var(--ax1);
+  --tertiary: var(--ax3);
+  --highlight: var(--hl1);
+  --textHighlight: var(--hl2);
+  /* Map background tokens used by the navy theme */
+  --background-primary: var(--bg1);
+  --background-secondary: var(--bg2);
+  --background-tertiary: var(--bg3);
+
+  /* Typography controlled via theme config (Schibsted Grotesk / Source Sans Pro / IBM Plex Mono) */
+}
+
+/* Headings: elegant sans with subtle weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Schibsted Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--tx1);
+}
+
+a {
+  color: var(--ax1);
+}
+a:hover {
+  color: var(--ax2);
+}
+
+code {
+  background-color: var(--ui1);
+  color: var(--tx4);
+}
+
+blockquote {
+  border-left: 3px solid var(--ax3);
+  color: var(--tx2);
+}
+
+/* Selection: green-tinted, distinct from warm link highlights */
+::selection {
+  background: var(--green-hl-selection);
+  color: var(--tx1);
+}
+
+
