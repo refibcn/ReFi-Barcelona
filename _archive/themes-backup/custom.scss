@@ -1,0 +1,15 @@
+@use "./base.scss";
+@import "minimal-refi.scss";
+
+/* Top navigation minor layout guardrails */
+.page > #quartz-body .page-header {
+  margin-top: 0;
+}
+
+/* Ensure content starts below sticky nav */
+body {
+  scroll-padding-top: 64px;
+}
+
+/* Hide dark mode toggle — uniform navy blue theme */
+.darkmode { display: none !important; }

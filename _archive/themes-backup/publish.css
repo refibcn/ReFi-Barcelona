@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+
+/* General Styling */
+body {
+    line-height: 1.6; /* Increased line spacing */
+    font-family: Arial, sans-serif; /* A standard web font for body */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-primary); /* Background color */
+}
+
+/* Graph view white elements and text */
+.graph-view {
+    --graph-text: #ffffff; /* White text in graph view */
+    --graph-node: #ffffff; /* White nodes */
+    --graph-node-focused: #ffffff; /* White focused nodes */
+    --graph-line: #ffffff; /* White lines */
+}
+
+/* Main background and text colors */
+.theme-dark,
+.theme-light {
+  --background-primary: #002147; /* Original Navy Blue */
+  --background-secondary: #002147; /* Original Slightly lighter Navy Blue */
+  --background-tertiary: #002147; /* Original Even lighter Navy Blue */
+  --background-modifier-border: rgba(255, 255, 255, 0.15); /* Border color */
+  --text-normal: #E1E1E6; /* Light gray for normal text */
+  --text-muted: #a8a8b3; /* Muted text */
+  --text-bright: #ffffff; /* Bright white for contrast */
+  --interactive-normal: #4C9AFF; /* Bright blue for links */
+  --interactive-hover: #1A73E8; /* Different blue for hover state */
+}
+
+/* Header styles */
+.theme-dark h1,
+.theme-light h1 {
+  color: var(--text-bright); /* Bright headers */
+  font-family: 'Bodoni Moda', serif; /* Bodoni Moda for headers */
+  font-style: italic; /* Italic style */
+  font-size: 2.5em; /* Larger font size for h1 */
+  font-weight: normal; /* Thinner font weight */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.theme-dark h2,
+.theme-light h2 {
+  color: var(--text-normal); /* Slightly muted headers */
+  font-family: 'Bodoni Moda', serif; /* Bodoni Moda for headers */
+  font-style: italic; /* Italic style */
+  font-size: 2em; /* Larger font size for h2 */
+  font-weight: normal; /* Thinner font weight */
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+/* Additional styling for a more web-like appearance */
+.container {
+    max-width: 800px; /* Limiting the width of the content */
+    margin: auto; /* Centering the container */
+    padding: 20px;
+}
+
+p {
+    margin-bottom: 1em; /* Space below paragraphs */
+}
+
+a {
+    color: var(--interactive-normal); /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Top bar link styling */
+.top-bar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: var(--background-secondary); /* Different background for top bar */
+}
+
+.top-bar-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-bright);
+  font-weight: var(--font-medium);
+}
+
+.top-bar-link:hover {
+  text-decoration: underline;
+}

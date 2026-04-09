@@ -4,12 +4,12 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.TopNav()],
+  header: [],
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "ReFi BCN": "https://refibcn.cat",
+      GitHub: "https://github.com/luizfernandosg/ReFi-Barcelona",
     },
   }),
 }
@@ -38,7 +38,37 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "collapsed",
+      folderClickBehavior: "link",
+      useSavedState: true,
+      filterFn: (node) => {
+        const hidden = ["tags", "wip", "archive", "operations", "assets"]
+        return !hidden.includes(node.slugSegment)
+      },
+      sortFn: (a, b) => {
+        const order: Record<string, number> = {
+          "about": 0,
+          "ecosystem": 1,
+          "regenerative-finance": 2,
+          "bioregional-finance": 3,
+          "cooperative": 4,
+          "cooperative-web3-bridging": 5,
+          "local-governance": 6,
+          "regenerant-catalunya": 7,
+          "articles": 8,
+        }
+        const aOrder = order[a.slugSegment] ?? 99
+        const bOrder = order[b.slugSegment] ?? 99
+        if (aOrder !== bOrder) return aOrder - bOrder
+        if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
+        return a.displayName.localeCompare(b.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      },
+      order: ["filter", "sort", "map"],
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +92,37 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "collapsed",
+      folderClickBehavior: "link",
+      useSavedState: true,
+      filterFn: (node) => {
+        const hidden = ["tags", "wip", "archive", "operations", "assets"]
+        return !hidden.includes(node.slugSegment)
+      },
+      sortFn: (a, b) => {
+        const order: Record<string, number> = {
+          "about": 0,
+          "ecosystem": 1,
+          "regenerative-finance": 2,
+          "bioregional-finance": 3,
+          "cooperative": 4,
+          "cooperative-web3-bridging": 5,
+          "local-governance": 6,
+          "regenerant-catalunya": 7,
+          "articles": 8,
+        }
+        const aOrder = order[a.slugSegment] ?? 99
+        const bOrder = order[b.slugSegment] ?? 99
+        if (aOrder !== bOrder) return aOrder - bOrder
+        if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
+        return a.displayName.localeCompare(b.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      },
+      order: ["filter", "sort", "map"],
+    }),
   ],
   right: [],
 }

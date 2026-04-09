@@ -1,12 +1,78 @@
 @use "./base.scss";
-@import "green-refi.scss";
 
-/* Top navigation minor layout guardrails */
-.page > #quartz-body .page-header {
-  margin-top: 0;
+/* ReFi Barcelona — Minimal custom overrides
+   Let Quartz config tokens do the heavy lifting. */
+
+/* Logo sizing */
+.page-logo {
+  width: 80px !important;
+  height: 80px !important;
 }
 
-/* Ensure content starts below sticky nav */
-body {
-  scroll-padding-top: 64px;
+.page-title-text {
+  font-size: 1.4rem;
 }
+
+/* Link refinements */
+a.internal {
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0 0.15rem;
+}
+
+a.external:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Code blocks */
+pre { border-radius: 8px; }
+code { border-radius: 4px; }
+
+/* Blockquotes */
+blockquote {
+  border-left-width: 3px;
+  border-left-color: var(--secondary);
+  padding: 0.2rem 1rem;
+  background: var(--highlight);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Tag pills */
+a.tag-link {
+  font-size: 0.82rem;
+  border-radius: 12px;
+  padding: 0.15rem 0.55rem;
+  background: var(--highlight);
+  color: var(--secondary);
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+a.tag-link:hover {
+  background: var(--secondary);
+  color: var(--light);
+}
+
+/* Explorer tree guides */
+.explorer-content .folder-outer > ul {
+  border-left: 1px solid var(--lightgray);
+}
+
+/* Graph + callout border-radius */
+.graph > .graph-outer { border-radius: 8px; }
+.callout { border-radius: 8px; }
+
+/* Article title sizing */
+article > h1 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* Table header weight */
+th { font-weight: 600; }
+
+/* Slim scrollbar (webkit) */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--gray); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--secondary); }

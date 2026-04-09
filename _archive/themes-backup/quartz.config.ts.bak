@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "ReFi Barcelona",
-    pageTitleSuffix: " — ReFi Barcelona Knowledge Commons",
+    pageTitleSuffix: " - Bridging Global and Local Regenerative Finance",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -23,32 +23,36 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Space Grotesk",
-        body: "Inter",
-        code: "JetBrains Mono",
+        header: {
+          name: "Bodoni Moda",
+          weights: [400],
+          includeItalic: true,
+        },
+        body: "Source Sans Pro",
+        code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#FAFAF8",
-          lightgray: "#E8E6E1",
-          gray: "#B0ADA5",
-          darkgray: "#4A4745",
-          dark: "#1C1917",
-          secondary: "#2E7D5B",
-          tertiary: "#1B6B4A",
-          highlight: "rgba(46, 125, 91, 0.12)",
-          textHighlight: "rgba(255, 212, 59, 0.35)",
+          light: "#002147", // Navy blue background
+          lightgray: "rgba(255, 255, 255, 0.1)", // Subtle white overlay
+          gray: "rgba(255, 255, 255, 0.15)", // Medium white overlay
+          darkgray: "#a8a8b3", // Muted text
+          dark: "#ffffff", // Bright white text
+          secondary: "#4C9AFF", // Bright blue for links
+          tertiary: "#1A73E8", // Darker blue for hover
+          highlight: "rgba(76, 154, 255, 0.2)", // Blue selection
+          textHighlight: "rgba(255, 255, 255, 0.1)", // White search highlight
         },
         darkMode: {
-          light: "#171614",
-          lightgray: "#2C2A27",
-          gray: "#4A4745",
-          darkgray: "#C4C0B9",
-          dark: "#EDEBE8",
-          secondary: "#5DB88D",
-          tertiary: "#7CCBA7",
-          highlight: "rgba(93, 184, 141, 0.15)",
-          textHighlight: "rgba(255, 212, 59, 0.25)",
+          light: "#002147", // Same navy blue for consistency
+          lightgray: "rgba(255, 255, 255, 0.1)", // Subtle white overlay
+          gray: "rgba(255, 255, 255, 0.15)", // Medium white overlay
+          darkgray: "#a8a8b3", // Muted text
+          dark: "#ffffff", // Bright white text
+          secondary: "#4C9AFF", // Bright blue for links
+          tertiary: "#1A73E8", // Darker blue for hover
+          highlight: "rgba(76, 154, 255, 0.2)", // Blue selection
+          textHighlight: "rgba(255, 255, 255, 0.1)", // White search highlight
         },
       },
     },

@@ -477,23 +477,13 @@ img {
   border-radius: var(--image-radius);
 }
 
-/* Link styling for internal vs external */
+/* Internal link styling — plain blue, no background */
 a.internal {
-  background-color: var(--hl1);
-  padding: 0.1em 0.2em;
-  border-radius: 3px;
   text-decoration: none;
 }
 
 a.internal:hover {
-  background-color: var(--hl2);
-}
-
-/* External link indicator */
-a[href^="http"]::after {
-  content: " ↗";
-  font-size: 0.8em;
-  opacity: 0.7;
+  text-decoration: underline;
 }
 
 /* ===== NAVIGATION ENHANCEMENTS ===== */
