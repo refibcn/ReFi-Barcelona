@@ -1,3 +1,23 @@
+---
+name: Arran de Terra
+type: cooperative
+status: active
+website: https://arrandeterra.org/
+email: info@arrandeterra.org
+phone: null
+location: "C/ Torre dels pardals 60, 1-4, 08032 Barcelona (HQ); operating in Garrotxa, Selva, Conca de Barberà, Catalunya Central, Barcelona metropolitan area"
+geo:
+  province: catalunya-wide
+  comarca: multi
+description: "Agroecology and food sovereignty cooperative working throughout Catalonia"
+focus_areas: [agroecology, food-sovereignty, rural-development, multi-capital]
+domain: bioregional-finance
+network_affiliation: [APACAT, Recoopera]
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://arrandeterra.org/]
+---
+
 # Arran de Terra
 
 ## Cooperative Overview

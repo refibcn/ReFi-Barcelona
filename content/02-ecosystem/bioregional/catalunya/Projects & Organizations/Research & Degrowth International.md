@@ -1,3 +1,23 @@
+---
+name: Research & Degrowth International
+type: think-tank
+status: active
+website: https://degrowth.org/
+email: null
+phone: null
+location: "Barcelona, Catalonia (international reach)"
+geo:
+  province: Barcelona
+  comarca: Barcelonès
+description: "Think-and-act-tank dedicated to degrowth principles and ecosocial transformation; runs Master's programs with ICTA-UAB"
+focus_areas: [degrowth, political-ecology, environmental-justice, ecosocial-transformation]
+domain: bioregional-finance
+network_affiliation: ["ICTA-UAB"]
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://degrowth.org/]
+---
+
 # Research & Degrowth International
 
 ## Organization Overview

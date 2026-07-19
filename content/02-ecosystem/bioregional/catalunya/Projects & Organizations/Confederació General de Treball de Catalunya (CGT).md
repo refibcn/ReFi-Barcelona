@@ -1,3 +1,23 @@
+---
+name: "Confederació General de Treball de Catalunya (CGT)"
+type: federation
+status: active
+website: https://cgtcatalunya.cat/
+email: spccc@spcgtcatalunya.cat
+phone: "935 120 481"
+location: "C/ Burgos 59, Baixos – 08014 Barcelona"
+geo:
+  province: Barcelona
+  comarca: Barcelonès
+description: "Libertarian labor union with anarcho-syndicalist principles operating in Catalonia"
+focus_areas: [labor-union, anarcho-syndicalism, worker-rights, social-action]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: adjacent
+last_verified: 2026-05-06
+sources: [https://cgtcatalunya.cat/]
+---
+
 
 # Confederació General de Treball de Catalunya (CGT) Reference
 

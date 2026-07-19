@@ -1,3 +1,23 @@
+---
+name: Fem Garrotxa
+type: initiative
+status: active
+website: https://femgarrotxa.cat/
+email: null
+phone: null
+location: La Garrotxa, Girona
+geo:
+  province: Girona
+  comarca: Garrotxa
+description: "Participatory strategic plan for La Garrotxa comarca (2020-2030); 6,500+ participants; SDG-aligned"
+focus_areas: [bioregional, participatory-planning, comarca-development, sdg]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://femgarrotxa.cat/]
+---
+
 # Fem Garrotxa
 
 ## Initiative Overview

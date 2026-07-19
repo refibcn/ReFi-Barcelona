@@ -1,3 +1,23 @@
+---
+name: SOS Costa Brava
+type: federation
+status: active
+website: https://soscostabrava.cat/
+email: hola@soscostabrava.cat
+phone: null
+location: "Carrer del Progrés 15, 17200 Palafrugell, Girona"
+geo:
+  province: Girona
+  comarca: Baix Empordà
+description: "Non-profit federation of 25+ entities defending the Costa Brava against urban speculation and major infrastructure projects"
+focus_areas: [territorial-defense, environmental-justice, costa-brava, anti-speculation, legal-action]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: adjacent
+last_verified: 2026-05-06
+sources: [https://soscostabrava.cat/]
+---
+
 # SOS Costa Brava
 
 ## Overview

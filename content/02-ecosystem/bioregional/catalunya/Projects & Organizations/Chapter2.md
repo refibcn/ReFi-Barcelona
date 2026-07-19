@@ -1,3 +1,23 @@
+---
+name: "Chapter#2"
+type: cooperative
+status: active
+website: https://chapter2.cat/
+email: null
+phone: null
+location: Catalonia
+geo:
+  province: unknown
+  comarca: null
+description: "Catalan social innovation organization (CHAPTER#2YOURPROJECT SL) using innovation as a tool for social and labour inclusion"
+focus_areas: [social-innovation, social-economy, lean-methodologies, meaningful-occupation]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://chapter2.cat/]
+---
+
 # Chapter#2
 
 ## Overview

@@ -1,3 +1,23 @@
+---
+name: Núria Social
+type: association
+status: active
+website: https://nuriasocial.org/
+email: hola@nuriasocial.org
+phone: null
+location: "Carrer Verge del Carme 8, Olot, Girona"
+geo:
+  province: Girona
+  comarca: Garrotxa
+description: "Associative management space for social, economic, and ecological transformation in la Garrotxa"
+focus_areas: [social-economy, change-management, food-sovereignty, intercultural-dialogue, leisure-education]
+domain: bioregional-finance
+network_affiliation: ["Resilience Earth", "Arriant Formació i Lleure"]
+relationship_to_refi_bcn: partner
+last_verified: 2026-05-06
+sources: [https://nuriasocial.org/]
+---
+
 # Núria Social
 
 ## Organization Overview

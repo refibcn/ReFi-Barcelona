@@ -1,3 +1,23 @@
+---
+name: Futurs imPossibles
+type: campaign
+status: active
+website: https://futursimpossibles.org/
+email: null
+phone: null
+location: Catalonia
+geo:
+  province: catalunya-wide
+  comarca: null
+description: "Participatory futures campaign envisioning Catalonia 2045 through ESS and ecosocial transition; led by XES"
+focus_areas: [futures, ess, ecosocial-transition, participatory, scenarios]
+domain: bioregional-finance
+network_affiliation: [XES]
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://futursimpossibles.org/]
+---
+
 # Futurs imPossibles
 
 ## Campaign Overview

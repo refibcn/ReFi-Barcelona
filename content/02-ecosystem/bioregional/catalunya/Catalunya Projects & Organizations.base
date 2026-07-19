@@ -1,0 +1,97 @@
+views:
+  - type: table
+    name: All
+    filters:
+      and:
+        - file.folder.contains("Projects & Organizations")
+        - 'note.domain == "bioregional-finance"'
+    order:
+      - file.name
+      - type
+      - status
+      - relationship_to_refi_bcn
+      - location
+      - website
+      - description
+      - focus_areas
+      - network_affiliation
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 280
+      note.type: 130
+      note.status: 90
+      note.relationship_to_refi_bcn: 160
+      note.location: 280
+      note.website: 220
+      note.description: 380
+      note.focus_areas: 280
+      note.network_affiliation: 240
+
+  - type: table
+    name: By type
+    filters:
+      and:
+        - file.folder.contains("Projects & Organizations")
+    order:
+      - note.type
+      - file.name
+      - note.status
+      - note.relationship_to_refi_bcn
+      - note.description
+    sort:
+      - property: note.type
+        direction: ASC
+      - property: file.name
+        direction: ASC
+
+  - type: table
+    name: By relationship
+    filters:
+      and:
+        - file.folder.contains("Projects & Organizations")
+    order:
+      - note.relationship_to_refi_bcn
+      - file.name
+      - note.type
+      - note.location
+      - note.description
+    sort:
+      - property: note.relationship_to_refi_bcn
+        direction: ASC
+      - property: file.name
+        direction: ASC
+
+  - type: table
+    name: By province
+    filters:
+      and:
+        - file.folder.contains("Projects & Organizations")
+    order:
+      - note.geo.province
+      - note.geo.comarca
+      - file.name
+      - note.type
+      - note.location
+    sort:
+      - property: note.geo.province
+        direction: ASC
+      - property: file.name
+        direction: ASC
+
+  - type: cards
+    name: Cards
+    filters:
+      and:
+        - file.folder.contains("Projects & Organizations")
+    order:
+      - file.name
+      - note.type
+      - note.description
+      - note.website
+      - note.relationship_to_refi_bcn
+    image: ""
+    sort:
+      - property: file.name
+        direction: ASC

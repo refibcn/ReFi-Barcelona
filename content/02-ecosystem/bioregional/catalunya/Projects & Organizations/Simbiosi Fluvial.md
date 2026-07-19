@@ -1,3 +1,23 @@
+---
+name: Simbiosi Fluvial
+type: alliance
+status: active
+website: https://simbiosifluvial.org/
+email: info@resilience.earth
+phone: "+34 676 66 99 72"
+location: "Fluvià River basin, Girona"
+geo:
+  province: Girona
+  comarca: multi
+description: "Alliance dedicated to renaturalization, custody, and regeneration of the Fluvià River and its watershed community"
+focus_areas: [river-restoration, watershed, biodiversity, citizen-science, bioregional-governance]
+domain: bioregional-finance
+network_affiliation: ["Resilience Earth", "Xarxa per la Conservació de la Natura (XCN)", "Natura 2000"]
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://simbiosifluvial.org/]
+---
+
 # Simbiosi Fluvial
 
 ## Organization Overview

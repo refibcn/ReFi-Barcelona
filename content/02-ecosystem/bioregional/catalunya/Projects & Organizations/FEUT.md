@@ -1,3 +1,23 @@
+---
+name: "FEUT - Fundación Ecología Urbana y Territorial"
+type: foundation
+status: active
+website: https://feut.org/
+email: null
+phone: null
+location: Barcelona
+geo:
+  province: Barcelona
+  comarca: Barcelonès
+description: "Barcelona-based foundation focused on urban and territorial ecology; led by Salvador Rueda; pioneered the superblocks (supermanzanas) model"
+focus_areas: [urban-ecology, territorial-ecology, ecosystemic-urbanism, superblocks, regeneration]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: adjacent
+last_verified: 2026-05-06
+sources: [https://feut.org/]
+---
+
 # FEUT - Fundación Ecología Urbana y Territorial
 
 ## Overview

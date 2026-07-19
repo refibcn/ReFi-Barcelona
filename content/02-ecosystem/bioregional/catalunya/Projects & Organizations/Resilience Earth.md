@@ -1,7 +1,23 @@
 ---
-URLs: https://resilience.earth/
-Parent item: "[[Rural Development and Sustainability]]"
+name: Resilience Earth
+type: cooperative
+status: active
+website: https://resilience.earth/
+email: null
+phone: null
+location: "Olot, Girona"
+geo:
+  province: Girona
+  comarca: Garrotxa
+description: "Non-profit cooperative for community resilience and regenerative design; advises municipalities; runs Community Catalysts training program"
+focus_areas: [community-resilience, regenerative-design, climate-justice, regenerative-economy, training]
+domain: bioregional-finance
+network_affiliation: ["Gaia Education", "Regenesis Institute"]
+relationship_to_refi_bcn: partner
+last_verified: 2026-05-06
+sources: [https://resilience.earth/]
 ---
+
 # Resilience Earth
 
 **Resilience.Earth** is a non-profit cooperative deeply invested in enhancing community resilience and regenerative design as pivotal instruments for socio-ecological transformation. Their work spans across advising municipalities, facilitating participatory evaluations, strategic planning, and offering formations and spaces for debate to foster community resilience. Their commitment to innovation and constant research underlines their efforts to address contemporary challenges creatively and constructively.

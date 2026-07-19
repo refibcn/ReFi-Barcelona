@@ -1,3 +1,23 @@
+---
+name: "Col·lectiu Eixarcolant"
+type: cooperative
+status: active
+website: https://eixarcolant.cat/
+email: null
+phone: "+34 690 37 39 80"
+location: "Carrer Major 47, 08719 Jorba, Barcelona"
+geo:
+  province: Barcelona
+  comarca: Anoia
+description: "Cooperative recovering wild species and traditional plant varieties through research, education, seed distribution, and cultural activities"
+focus_areas: [seeds, biodiversity, agriculture, traditional-knowledge, food-systems]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://eixarcolant.cat/]
+---
+
 # Col·lectiu Eixarcolant
 
 ## Overview

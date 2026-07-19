@@ -1,3 +1,23 @@
+---
+name: Balkar Earth
+type: initiative
+status: active
+website: https://balkar.earth/
+email: info@balkar.earth
+phone: "972 69 11 23"
+location: "Espai Núria Social, C/ del Carme 8, Olot (17800) Girona"
+geo:
+  province: Girona
+  comarca: Garrotxa
+description: "Transrural workshop for collective inquiry on catalyzing territorial balance change"
+focus_areas: [community-resilience, territorial-development, decolonial, social-technology]
+domain: bioregional-finance
+network_affiliation: ["Resilience Earth", "Núria Social", XES, "XES Garrotxa", Miceli, "Community Catalysts", "Climate Coaches"]
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://balkar.earth/]
+---
+
 # Balkar Earth
 
 ## Project Overview

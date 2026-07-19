@@ -1,3 +1,23 @@
+---
+name: IDRA Institut de Recerca Urbana de Barcelona
+type: research-institute
+status: active
+website: https://idrabcn.com/
+email: idra@idrabcn.com
+phone: null
+location: "C/Balmes 13 baixos (local), 08007 Barcelona"
+geo:
+  province: Barcelona
+  comarca: Barcelonès
+description: "Cooperative urban research institute analyzing urban challenges and developing solutions for social and ecological justice"
+focus_areas: [urban-research, social-justice, ecological-justice, transformative-institutions]
+domain: bioregional-finance
+network_affiliation: [XES, "Federated Cooperative"]
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://idrabcn.com/]
+---
+
 # IDRA Institut de Recerca Urbana de Barcelona
 
 ## Overview

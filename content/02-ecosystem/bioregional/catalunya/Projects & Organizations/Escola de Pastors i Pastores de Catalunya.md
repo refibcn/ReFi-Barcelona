@@ -1,3 +1,23 @@
+---
+name: Escola de Pastors i Pastores de Catalunya
+type: educational
+status: active
+website: https://escoladepastorsdecatalunya.cat/
+email: info@rurbans.org
+phone: "973 620 977"
+location: "Crta. C13 km 131, 25594 Rialp, Lleida (admin); training in Poble d'Enviny, Sort"
+geo:
+  province: Lleida
+  comarca: Pallars Sobirà
+description: "Formative project training new shepherds and promoting extensive livestock farming in the Catalan Pyrenees"
+focus_areas: [shepherding, extensive-livestock, rural-development, pastoral, pyrenees]
+domain: bioregional-finance
+network_affiliation: ["Associació rurbans"]
+relationship_to_refi_bcn: adjacent
+last_verified: 2026-05-06
+sources: [https://escoladepastorsdecatalunya.cat/]
+---
+
 # Escola de Pastors i Pastores de Catalunya
 
 ## Overview

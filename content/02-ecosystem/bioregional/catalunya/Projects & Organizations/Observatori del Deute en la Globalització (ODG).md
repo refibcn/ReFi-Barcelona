@@ -1,3 +1,23 @@
+---
+name: "Observatori del Deute en la Globalització (ODG)"
+type: research-network
+status: active
+website: https://odg.cat/
+email: observatori@odg.cat
+phone: "93 301 17 93"
+location: "C/ Junta de Comerç 20, principal, 08001 Barcelona"
+geo:
+  province: Barcelona
+  comarca: Barcelonès
+description: "Research and activism network (25 years; founded ~2000) focused on financial justice, climate justice, and commons defense"
+focus_areas: [financial-justice, climate-justice, commons, ecofeminism, energy-transition]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://odg.cat/]
+---
+
 # Observatori del Deute en la Globalització (ODG)
 
 ## Organization Overview

@@ -1,3 +1,23 @@
+---
+name: Observatori del Paisatge de Catalunya
+type: consortium
+status: active
+website: https://www.catpaisatge.net/
+email: observatori@catpaisatge.net
+phone: "+34 972 27 35 64"
+location: "C/ Hospici 8, 17800 Olot, Girona"
+geo:
+  province: Girona
+  comarca: Garrotxa
+description: "Catalonia-wide official landscape research and planning consortium (Consorcio del Observatorio del Paisaje)"
+focus_areas: [landscape, territorial-research, planning, institutional]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: adjacent
+last_verified: 2026-05-06
+sources: [https://www.catpaisatge.net/]
+---
+
 # Observatori del Paisatge de Catalunya
 
 ## Overview

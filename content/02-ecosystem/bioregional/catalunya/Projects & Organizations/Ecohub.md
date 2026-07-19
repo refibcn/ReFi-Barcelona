@@ -1,3 +1,23 @@
+---
+name: Ecohub
+type: cooperative
+status: active
+website: https://ecohub.cat/
+email: null
+phone: null
+location: Catalonia
+geo:
+  province: catalunya-wide
+  comarca: null
+description: "Cooperative hub of 100+ professionals across 9 entities, accelerating just and democratic ecological transitions inspired by Doughnut Economics"
+focus_areas: [ecological-transition, doughnut-economics, regenerative, futures, democracy]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: peer
+last_verified: 2026-05-06
+sources: [https://ecohub.cat/]
+---
+
 # Ecohub
 
 ## Overview

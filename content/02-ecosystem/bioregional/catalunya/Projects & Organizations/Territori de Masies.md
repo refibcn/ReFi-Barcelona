@@ -1,3 +1,23 @@
+---
+name: "Territori de Masies, sccl"
+type: cooperative
+status: active
+website: https://www.territoridemasies.cat/
+email: null
+phone: null
+location: "baix Solsonès villages: Llanera, La Molsosa, Pinós, Riner, Llobera, Pinell de Solsonès, Clariana de Cardener"
+geo:
+  province: Lleida
+  comarca: Solsonès
+description: "Rural cooperative formed by neighbors, associations, and businesses from villages of lower Solsonès region"
+focus_areas: [rural-cooperative, masies, landscape, traditional-life]
+domain: bioregional-finance
+network_affiliation: []
+relationship_to_refi_bcn: adjacent
+last_verified: 2026-05-06
+sources: [https://www.territoridemasies.cat/]
+---
+
 # Territori de Masies
 
 ## Overview

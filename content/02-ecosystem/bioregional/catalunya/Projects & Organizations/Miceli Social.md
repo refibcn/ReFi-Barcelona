@@ -1,3 +1,23 @@
+---
+name: Miceli Social
+type: cooperative
+status: active
+website: https://miceli.social/
+email: info@miceli.social
+phone: "676 669 972"
+location: "Plaça Gran 23, 17500 Ripoll, Girona"
+geo:
+  province: Girona
+  comarca: Ripollès
+description: "Cooperative service hub providing comprehensive services to rural territories in Catalonia; rural-municipality regenerative development"
+focus_areas: [rural-regeneration, social-economy, community-resilience, ecological-transition, nature-based-solutions]
+domain: bioregional-finance
+network_affiliation: ["Resilience Earth orbit"]
+relationship_to_refi_bcn: partner
+last_verified: 2026-05-06
+sources: [https://miceli.social/]
+---
+
 
 # Miceli Social
 
